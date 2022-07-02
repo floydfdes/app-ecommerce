@@ -1,5 +1,46 @@
-<p>
-  <mat-toolbar>
-    <span>My Application</span>
-  </mat-toolbar>
-</p>
+<nav class="navbar navbar-expand-lg font-pri bg-pri">
+  <a class="navbar-brand text-white" href="#">Shelf</a>
+
+  <div class="navbar-collapse" id="navbarNav">
+    <form class="d-flex my-2 my-lg-0 mx-auto">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+      />
+      <button class="btn btn-block btn-pri-outline mx-2 my-sm-0" type="submit">
+        <mat-icon class="d-block d-sm-none mat-icon-pri">search</mat-icon>
+        <span class="d-none d-sm-block" href="#">Search</span>
+      </button>
+    </form>
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <mat-icon class="d-block d-sm-none mat-icon-pri"
+          >library_books</mat-icon
+        >
+
+        <a class="nav-link d-none d-sm-block" href="#">Blog</a>
+      </li>
+      <li class="nav-item">
+        <mat-icon class="d-block d-sm-none mat-icon-pri"
+          >shopping_basket</mat-icon
+        >
+
+        <a class="nav-link d-none d-sm-block" href="#">Products</a>
+      </li>
+      <li class="nav-item">
+        <mat-icon class="d-block d-sm-none mat-icon-pri">person</mat-icon>
+
+        <a class="nav-link d-none d-sm-block" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <mat-icon class="d-block d-sm-none mat-icon-pri"
+          >perm_contact_calendar</mat-icon
+        >
+
+        <a class="nav-link disabled d-none d-sm-block" href="#">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
