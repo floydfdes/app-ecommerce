@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg px-2 font-pri bg-pri">
   <a class="navbar-brand text-white" routerLink="/">Shelf</a>
-  <span class="m-2 d-block d-sm-none">
+  <span class="cart-margin d-block d-sm-none">
     <mat-icon matBadge="0" matBadgeColor="primary" class="mat-icon-pri"
       >shopping_cart</mat-icon
     >
@@ -39,7 +39,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" routerLink="about">
-          <mat-icon class="d-block d-sm-none mat-icon-pri">person</mat-icon>
+          <mat-icon class="d-block d-sm-none mat-icon-pri">info</mat-icon>
 
           <span class="d-none d-sm-block"> About </span>
         </a>
@@ -49,13 +49,22 @@
           <mat-icon class="d-block d-sm-none mat-icon-pri"
             >perm_contact_calendar</mat-icon
           >
-
           <span class="d-none d-sm-block"> Contact Us </span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="login">
+          <mat-icon class="d-block d-sm-none mat-icon-pri"
+            >account_circle</mat-icon
+          >
+          <span class="d-none d-sm-block">
+            {{ isLoggedIn ? "Logout" : "Login" }}
+          </span>
         </a>
       </li>
     </ul>
   </div>
-  <span class="p-2 d-none d-sm-block">
+  <span class="cart-margin d-none d-sm-block">
     <mat-icon matBadge="0" matBadgeColor="primary" class="mat-icon-pri"
       >shopping_cart</mat-icon
     >
