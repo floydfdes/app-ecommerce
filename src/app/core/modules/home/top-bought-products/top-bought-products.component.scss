@@ -1,0 +1,9 @@
+.wrapper{
+  
+    display: flex;
+    overflow-x: auto;
+}
+
+.wrapper::-webkit-scrollbar{
+    width: 0;
+}
