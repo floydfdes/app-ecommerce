@@ -1,1 +1,19 @@
-<p>top-rated-products works!</p>
+<div class="wrapper">
+  <div class="item" *ngFor="let product of products">
+    <div class="card m-1" style="width: 18rem">
+      <img
+        class="card-img-top"
+        src="{{ product.images[0] }}"
+        alt="Card image cap"
+        height="120px"
+      />
+      <div class="card-body">
+        <h5 class="card-title">{{ product.title }}</h5>
+        <p class="card-text">
+          {{ product.description | transformDescription }}...
+        </p>
+        <a href="#" class="btn btn-primary btn-inline">${{ product.price }}</a>
+      </div>
+    </div>
+  </div>
+</div>
