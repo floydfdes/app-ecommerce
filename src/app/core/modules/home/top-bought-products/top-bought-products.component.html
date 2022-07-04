@@ -13,7 +13,14 @@
         <p class="card-text">
           {{ product.description | transformDescription }}...
         </p>
-        <a href="#" class="btn btn-primary btn-inline">${{ product.price }}</a>
+        <div class="d-flex justify-content-between">
+          <a href="#" class="btn btn-primary btn-inline"
+            >${{ product.price }}</a
+          >
+          <button class="btn btn-warning">
+            <mat-icon>add_shopping_cart</mat-icon>
+          </button>
+        </div>
       </div>
     </div>
   </div>

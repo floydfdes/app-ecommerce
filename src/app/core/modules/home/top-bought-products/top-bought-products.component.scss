@@ -7,3 +7,11 @@
 .wrapper::-webkit-scrollbar{
     width: 0;
 }
+
+.wrapper img{
+    padding: 1rem;
+}
+.wrapper .card-title{
+    font-weight: bold;
+    margin: 0;
+}

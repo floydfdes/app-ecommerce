@@ -10,11 +10,17 @@
   font-family: Gantari Regular;
   src: url("../src/assets/fonts/Gantari-Regular.ttf");
 }
+@font-face {
+  font-family: Gantari Bold;
+  src: url("../src/assets/fonts/Gantari-Bold.ttf");
+}
 
 * {
   font-family: "Gantari Regular", sans-serif;
 }
+
 h3{
+  font-family:  "Gantari Bold", sans-serif;
   color: var(--primary-color);
 }
 .bg-pri {
