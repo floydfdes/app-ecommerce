@@ -1,6 +1,10 @@
-<h3>Most bought items</h3>
+<h3>Most bought</h3>
 <div class="wrapper">
-  <div class="item" *ngFor="let product of mostBoughtProducts">
+  <div
+    class="item"
+    *ngFor="let product of mostBoughtProducts"
+    routerLink="{{ 'products/' + product.id }}"
+  >
     <div class="card m-1" style="width: 20rem">
       <img
         class="card-img-top"
