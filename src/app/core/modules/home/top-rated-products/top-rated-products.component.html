@@ -14,15 +14,20 @@
       />
       <div class="card-body">
         <h5 class="card-title">{{ product.title }}</h5>
-        <p class="card-text">
+        <p class="card-text my-0">
           {{ product.description | transformDescription }}...
         </p>
+        <p>
+          {{ product.rating }}
+        </p>
         <div class="d-flex justify-content-between">
-          <a href="#" class="btn btn-primary btn-inline"
-            >${{ product.price }}</a
-          >
-          <button class="btn btn-warning">
+          <div>
+            <div class="price-title">Price</div>
+            <span class="price-body">${{ product.price }}</span>
+          </div>
+          <button class="btn btn-add-to-cart d-flex">
             <mat-icon>add_shopping_cart</mat-icon>
+            <span>Add to cart</span>
           </button>
         </div>
       </div>

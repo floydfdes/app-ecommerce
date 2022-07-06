@@ -1,5 +1,6 @@
 .font-pri .navbar-nav .nav-link,.mat-icon-pri{
-    color: var(--fourth-color);
+    color: var(--primary-color);
+    font-weight: bold;
 }
 
 @media screen and (max-width:576px) {

@@ -7,24 +7,24 @@
 }
 
 @font-face {
-  font-family: Gantari Regular;
-  src: url("../src/assets/fonts/Gantari-Regular.ttf");
+  font-family: OpenSans Regular;
+  src: url("../src/assets/fonts/OpenSans-Regular.ttf");
 }
 @font-face {
-  font-family: Gantari Bold;
-  src: url("../src/assets/fonts/Gantari-Bold.ttf");
+  font-family: OpenSans Bold;
+  src: url("../src/assets/fonts/OpenSans-Bold.ttf");
 }
 
 * {
-  font-family: "Gantari Regular", sans-serif;
+  font-family: "OpenSans Regular", sans-serif;
 }
 
 h3{
-  font-family:  "Gantari Bold", sans-serif;
+  font-family:  "OpenSans Bold", sans-serif;
   color: var(--primary-color);
 }
 .bg-pri {
-  background-color: var(--primary-color);
+  background-color: var(--third-color);
 }
 .font-pri{
   color: var(--primary-color);
