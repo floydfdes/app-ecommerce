@@ -33,8 +33,11 @@
   }
 }
 .wrapper .card {
+  .card-text{
+    font-size: 14px;
+  }
   --h: 1.2em; /* the height */
-
+height: 20rem;
   line-height: var(--h);
   color: #0000;
   overflow: hidden;
