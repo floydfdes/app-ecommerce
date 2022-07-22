@@ -4,7 +4,7 @@ import { products } from 'src/app/shared/data/mock-products';
 @Component({
   selector: 'top-rated-products',
   templateUrl: './top-rated-products.component.html',
-  styleUrls: ['./top-rated-products.component.scss'],
+  styleUrls: ['../home.component.scss'],
 })
 export class TopRatedProductsComponent implements OnInit {
   products: any = products;
