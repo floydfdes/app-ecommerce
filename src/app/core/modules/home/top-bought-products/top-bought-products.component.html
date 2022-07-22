@@ -1,4 +1,4 @@
-<h3>Top rated</h3>
+<button class="btn section-title-btn">Most bought</button>
 <div class="wrapper">
   <div
     class="item"
@@ -18,7 +18,10 @@
           {{ product.description | transformDescription }}...
         </p>
         <p>
-          {{ product.rating }}
+          Rating:
+          <span class="text-warning font-weight-bold">
+            {{ product.rating | rating }}</span
+          >
         </p>
         <div class="d-flex justify-content-between">
           <div>

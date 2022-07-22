@@ -9,6 +9,7 @@ import { TopBoughtProductsComponent } from './top-bought-products/top-bought-pro
 import { NewProductsComponent } from './new-products/new-products.component';
 import { TransformDescriptionPipe } from '../../pipes/transform-description.pipe';
 import { MatIconModule } from '@angular/material/icon';
+import { RatingPipe } from '../../pipes/rating.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { MatIconModule } from '@angular/material/icon';
     TopBoughtProductsComponent,
     NewProductsComponent,
     TransformDescriptionPipe,
+    RatingPipe,
   ],
   imports: [CommonModule, HomeRoutingModule, MatIconModule],
 })
