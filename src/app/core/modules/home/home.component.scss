@@ -25,38 +25,34 @@
 .wrapper .btn-add-to-cart {
   border: 1px solid var(--primary-color);
   font-weight: bold;
-
+  border-radius: 0;
   align-items: center;
   &:hover {
-    border: 1px solid var(--fourth-color) !important;
-    color: var(--fourth-color) !important;
+    border: 1px solid var(--secondary-color) !important;
+    color: var(--secondary-color) !important;
   }
 }
 .wrapper .card {
-  .card-text{
+  border-radius: 0;
+  .card-text {
     font-size: 14px;
   }
-  --h: 1.2em; /* the height */
-height: 20rem;
-  line-height: var(--h);
-  color: #0000;
-  overflow: hidden;
-  text-shadow: 0 0 var(--_c, #000);
-  background: linear-gradient(var(--primary-color) 0 0) bottom/100% var(--_d, 0) no-repeat;
+
+  height: 20rem;
+  line-height: 1.2em;
+
   transition: 0.3s;
   &:hover {
-    --_d: 100%;
-    --_t: 0;
-    --_c: #0000;
-    color: white !important;
-
-    button{
-        border: 1px solid var(--fourth-color) !important;
-        color: var(--fourth-color) !important;
-    }
-
+    box-shadow: rgba(240, 46, 170, 0.4) 0px 5px,
+      rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px,
+      rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
   }
 }
 // .wrapper .card:hover button{
 //     color: white;
 // }
+.rating-icon {
+  font-size: 16px;
+  height: 16px;
+  width: 16px;
+}

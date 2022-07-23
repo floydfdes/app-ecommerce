@@ -1,15 +1,25 @@
-.font-pri .navbar-nav .nav-link,.mat-icon-pri{
-    color: var(--primary-color);
-    font-weight: bold;
+.font-pri .navbar-nav .nav-link,
+.mat-icon-pri {
+  color: var(--primary-color);
+  font-weight: bold;
+  &:hover {
+    color: var(--fourth-color);
+    background-color: var(--secondary-color);
+  }
 }
 
-@media screen and (max-width:576px) {
-    .navbar-nav {
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
+@media screen and (max-width: 576px) {
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
-.cart-margin{
-    margin: 10px 10px 0px 0px;
+.cart-margin {
+  margin: 10px 10px 0px 0px;
+}
+
+.nav-item:hover {
+  background-color: var(--secondary-color);
+  color: var(--fourth-color) !important;
 }

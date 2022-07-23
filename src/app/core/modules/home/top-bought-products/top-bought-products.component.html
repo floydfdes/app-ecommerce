@@ -1,39 +1,4 @@
-<h3 class="section-title-btn">Trending</h3>
-<div class="wrapper">
-  <div
-    class="item"
-    *ngFor="let product of mostBoughtProducts"
-    routerLink="{{ 'products/' + product.id }}"
-  >
-    <div class="card m-2 p-1" style="width: 20rem">
-      <img
-        class="card-img-top"
-        src="{{ product.images[0] }}"
-        alt="Card image cap"
-        height="150px"
-      />
-      <div class="card-body">
-        <h5 class="card-title">{{ product.title }}</h5>
-        <p class="card-text my-0">
-          {{ product.description | transformDescription }}...
-        </p>
-        <p>
-          Rating:
-          <span class="text-warning font-weight-bold">
-            {{ product.rating | rating }}</span
-          >
-        </p>
-        <div class="d-flex justify-content-between">
-          <div>
-            <div class="price-title">Price</div>
-            <span class="price-body">${{ product.price }}</span>
-          </div>
-          <button class="btn btn-add-to-cart d-flex">
-            <mat-icon>add_shopping_cart</mat-icon>
-            <span>Add to cart</span>
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+<new-products
+  [products]="mostBoughtProducts"
+  [heading]="'Trending'"
+></new-products>
