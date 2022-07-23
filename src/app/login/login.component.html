@@ -1,43 +1,57 @@
 <div class="container">
-  <div class="px-4">
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
-      <h1 class="font-pri">Login</h1>
-      <div class="form-group">
-        <label class="font-sec" for="exampleInputEmail1">Email address</label>
-        <input
-          formControlName="email"
-          type="email"
-          class="form-control"
-          id="exampleInputEmail1"
-          aria-describedby="emailHelp"
-          placeholder="Enter email"
-        />
-        <small id="emailHelp" class="form-text text-muted"
-          >We'll never share your email with anyone else.</small
-        >
-        <div *ngIf="!email?.valid && (email?.dirty || email?.touched)">
-          <div [hidden]="!email.errors.required">Email is required</div>
-          <div [hidden]="!email.errors.email">Email is not valid</div>
-        </div>
-      </div>
-      <div class="form-group">
-        <label class="font-sec" for="exampleInputPassword1">Password</label>
-        <input
-          formControlName="password"
-          type="password"
-          class="form-control"
-          id="exampleInputPassword1"
-          placeholder="Password"
-        />
-        <div *ngIf="!password?.valid && (password?.dirty || password?.touched)">
-          <div [hidden]="!password.errors.required">Password is required</div>
-          <div [hidden]="!password.errors.minlength">
-            password must be minimum 6 characters
+  <div class="login-container">
+    <div class="login-form card">
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" novalidate>
+        <h1 class="font-pri">Login</h1>
+        <div class="form-group">
+          <label class="font-sec" for="exampleInputEmail1">Email address</label>
+          <input
+            formControlName="email"
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+
+          <div
+            class="text-danger"
+            *ngIf="
+              !email?.valid && (email?.dirty || email?.touched || isSubmitted)
+            "
+          >
+            <div [hidden]="!email.errors.required">Email is required</div>
+            <div [hidden]="!email.errors.email">Email is not valid</div>
           </div>
         </div>
-      </div>
+        <div class="form-group">
+          <label class="font-sec" for="exampleInputPassword1">Password</label>
+          <input
+            formControlName="password"
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+          <div
+            class="text-danger"
+            *ngIf="
+              !password?.valid &&
+              (password?.dirty || password?.touched || isSubmitted)
+            "
+          >
+            <div [hidden]="!password.errors.required">Password is required</div>
+            <div [hidden]="!password.errors.minlength">
+              password must be minimum 6 characters
+            </div>
+          </div>
+        </div>
 
-      <button type="submit" class="btn btn-pri my-2">Submit</button>
-    </form>
+        <button type="submit" class="btn btn-pri my-2">Submit</button>
+        <button (click)="resetForm()" type="button" class="btn btn-danger m-2">
+          Reset
+        </button>
+      </form>
+    </div>
   </div>
 </div>

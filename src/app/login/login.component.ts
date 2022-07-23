@@ -17,6 +17,7 @@ export class LoginComponent implements OnInit {
     email: 'floyd@gmail.com',
     password: 'floyd123',
   };
+  isSubmitted: boolean = false;
   constructor(private fB: FormBuilder) {}
 
   ngOnInit(): void {
@@ -26,7 +27,7 @@ export class LoginComponent implements OnInit {
     });
   }
   onSubmit() {
-    console.log(this.loginForm);
+    this.isSubmitted = true;
     if (
       this.loginForm.get('email').value == this.validCred.email &&
       this.loginForm.get('password').value == this.validCred.password
@@ -42,5 +43,8 @@ export class LoginComponent implements OnInit {
 
   get password() {
     return this.loginForm.get('password');
+  }
+  resetForm() {
+    this.loginForm.reset();
   }
 }
