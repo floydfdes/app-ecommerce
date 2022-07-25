@@ -1,10 +1,10 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 :root {
-  --c1: #f6416c;
-  --c2: #ffde7d;
-  --c3: #00b8a9;
-  --c4: #f8f3d4;
-  --c5: #e7d1c7;
+  --c1: #ff165d;
+  --c2: #ff9a00;
+  --c3: #3ec1d3;
+  --c4: #ffff;
+  --c5: #fff;
 }
 
 @font-face {
@@ -15,11 +15,18 @@
   font-family: PTSans Bold;
   src: url("../src/assets/fonts/PTSans-Bold.ttf");
 }
+@font-face {
+  font-family: Poppins Bold;
+  src: url("../src/assets/fonts/Poppins-Bold.ttf");
+}
 
 * {
   font-family: "PTSans Regular", sans-serif;
 }
 
+#app-logo {
+  font-family: "Poppins Bold";
+}
 h3 {
   font-family: "PTSans Bold", sans-serif;
   color: var(--c1);
@@ -51,7 +58,7 @@ h3 {
 }
 
 .section-title-btn {
-  color: var(--c3);
+  color: var(--c2);
   margin-bottom: 0;
 }
 

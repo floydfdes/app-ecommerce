@@ -4,17 +4,19 @@
 
   &:hover {
     color: var(--c4);
-    background-color: var(--c2);
+    background-color: var(--c3);
   }
 }
 .font-pri .navbar-nav .nav-link span {
   font-family: "PTSans Bold", sans-serif;
 }
-
+.nav-link {
+  padding: 0.5rem;
+}
 @media screen and (max-width: 576px) {
   .navbar-nav {
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 }
 
