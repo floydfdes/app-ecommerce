@@ -8,11 +8,13 @@
 }
 
 .wrapper img {
-  padding: 1rem;
+  padding: 0rem;
+  border-radius: 0px;
 }
 .wrapper .card-title {
   font-weight: bold;
   margin: 0;
+  color: var(--c1);
 }
 
 .wrapper .price-title {
@@ -23,17 +25,18 @@
   font-weight: bold;
 }
 .wrapper .btn-add-to-cart {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--c1);
   font-weight: bold;
   border-radius: 0;
   align-items: center;
   &:hover {
-    border: 1px solid var(--secondary-color) !important;
-    color: var(--secondary-color) !important;
+    border: 1px solid var(--c2) !important;
+    color: var(--c2) !important;
   }
 }
 .wrapper .card {
   border-radius: 0;
+  border: 0px;
   .card-text {
     font-size: 14px;
   }

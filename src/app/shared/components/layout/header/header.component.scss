@@ -1,11 +1,14 @@
 .font-pri .navbar-nav .nav-link,
 .mat-icon-pri {
-  color: var(--primary-color);
-  font-weight: bold;
+  color: var(--c1);
+
   &:hover {
-    color: var(--fourth-color);
-    background-color: var(--secondary-color);
+    color: var(--c4);
+    background-color: var(--c2);
   }
+}
+.font-pri .navbar-nav .nav-link span {
+  font-family: "PTSans Bold", sans-serif;
 }
 
 @media screen and (max-width: 576px) {
@@ -20,6 +23,10 @@
 }
 
 .nav-item:hover {
-  background-color: var(--secondary-color);
-  color: var(--fourth-color) !important;
+  background-color: var(--c2);
+  color: var(--c4) !important;
+}
+
+.logo-name {
+  font-family: "Courier New", Courier, monospace;
 }

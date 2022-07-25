@@ -1,61 +1,65 @@
 @import "~@angular/material/prebuilt-themes/deeppurple-amber.css";
 :root {
-  --primary-color: #0d294a;
-  --secondary-color: #ad1f4d;
-  --third-color: #51bbe0;
-  --fourth-color: #ece6db;
-  --fifth-color: #c7b9a2;
+  --c1: #f6416c;
+  --c2: #ffde7d;
+  --c3: #00b8a9;
+  --c4: #f8f3d4;
+  --c5: #e7d1c7;
 }
 
 @font-face {
-  font-family: Poppins Regular;
-  src: url("../src/assets/fonts/Poppins-Regular.ttf");
+  font-family: PTSans Regular;
+  src: url("../src/assets/fonts/PTSans-Regular.ttf");
 }
 @font-face {
-  font-family: Poppins Bold;
-  src: url("../src/assets/fonts/Poppins-Bold.ttf");
+  font-family: PTSans Bold;
+  src: url("../src/assets/fonts/PTSans-Bold.ttf");
 }
 
 * {
-  font-family: "Poppins Regular", sans-serif;
+  font-family: "PTSans Regular", sans-serif;
 }
 
 h3 {
-  font-family: "Poppins Bold", sans-serif;
-  color: var(--primary-color);
+  font-family: "PTSans Bold", sans-serif;
+  color: var(--c1);
 }
 .bg-pri {
-  background-color: var(--fourth-color);
+  background-color: var(--c4);
 }
 .font-pri {
-  color: var(--primary-color);
+  color: var(--c1);
 }
 .font-sec {
-  color: var(--secondary-color);
+  color: var(--c2);
 }
 .btn-pri-outline {
-  color: var(--primary-color);
+  color: var(--c1);
 
-  background-color: var(--fourth-color);
-  border: 1px solid var(--primary-color);
+  background-color: var(--c4);
+  border: 1px solid var(--c1);
 }
 
 .btn-pri {
-  color: var(--fourth-color);
-  border-color: var(--primary-color);
-  background-color: var(--primary-color);
+  color: var(--c4);
+  border-color: var(--c1);
+  background-color: var(--c1);
   &:hover {
-    color: var(--primary-color);
-    background-color: var(--fourth-color);
+    color: var(--c1);
+    background-color: var(--c4);
   }
 }
 
 .section-title-btn {
-  color: var(--primary-color);
+  color: var(--c3);
   margin-bottom: 0;
 }
 
 button,
 input {
   box-shadow: none !important;
+}
+
+.navbar {
+  background-color: var(--c4);
 }
